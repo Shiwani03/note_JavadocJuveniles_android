@@ -1,4 +1,4 @@
-package com.javadocjuveniles;
+package com.lambton.note_javadocjuveniles_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
