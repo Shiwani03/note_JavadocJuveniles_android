@@ -26,9 +26,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.javadocjuveniles.Models.Notes;
-import com.javadocjuveniles.Models.Subjects;
-import com.javadocjuveniles.utils.DataConverter;
+import com.lambton.note_javadocjuveniles_android.Models.Notes;
+import com.lambton.note_javadocjuveniles_android.Models.Subjects;
 
 import java.io.IOException;
 import java.util.Date;
@@ -68,7 +67,7 @@ public class NewNoteActivity extends AppCompatActivity {
         description=(EditText) findViewById(R.id.description);
         subject=(Button) findViewById(R.id.select_subject);
         share_pic=(ImageView) findViewById(R.id.share_pic);
-        notesDatabase = NotesDatabase.getInstance(com.javadocjuveniles.NewNoteActivity.this);
+        notesDatabase = NotesDatabase.getInstance(NewNoteActivity.this);
 
         save=(RelativeLayout) findViewById(R.id.save);
 
