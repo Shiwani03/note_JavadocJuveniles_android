@@ -180,7 +180,7 @@ public class NewNoteActivity extends AppCompatActivity {
 
     }
 
-    private void getAndSetNotes() {
+    /*private void getAndSetNotes() {
         List<Notes> notes = notesDatabase.getNoteDao().getAll();
         int index = getIntent().getIntExtra("selectedIndex",-1);
         if (index != -1){
@@ -329,5 +329,5 @@ public class NewNoteActivity extends AppCompatActivity {
         Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
         photoPickerIntent.setType("image/*");
         startActivityForResult(photoPickerIntent, GALLERY_REQUEST);
-    }
+    }*/
 }
