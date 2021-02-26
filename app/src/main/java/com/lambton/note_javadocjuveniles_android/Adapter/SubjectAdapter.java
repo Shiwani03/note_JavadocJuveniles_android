@@ -45,7 +45,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
     }
 
-   /* @Override
+   @Override
     public int getItemCount() {
         return list.size();
     }
@@ -62,7 +62,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
         }
 
-        @Override
+       /* @Override
         public void onClick(View view) {
             selectSubject(getAdapterPosition());
         }
