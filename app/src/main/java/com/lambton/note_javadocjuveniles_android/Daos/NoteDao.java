@@ -34,7 +34,7 @@ public interface NoteDao {
      * @param note, object to be deleted
      */
     @Delete
-  /*  void delete(Notes note);
+    void delete(Notes note);
 
     /*
      * delete list of objects from database
@@ -43,4 +43,4 @@ public interface NoteDao {
     @Delete
     void delete(Notes... note);     // Note... is varargs, here note is an array
 
-}*/
+}
