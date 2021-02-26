@@ -291,7 +291,7 @@ public class NewNoteActivity extends AppCompatActivity {
         }
     }
 
-   /* public void gallery() {
+    public void gallery() {
 
         final CharSequence[] items = { "Take Photo", "Choose from Library","Record Audio","Cancel" };
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
