@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         search.addTextChangedListener(new TextWatcher()
 
         {
-          /*  @Override
+            @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(MainActivity.this).getSubjectDao().getAll()) {
+       /* madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(MainActivity.this).getSubjectDao().getAll()) {
             @Override
             public void deleteAddress(final int pos) {
 
