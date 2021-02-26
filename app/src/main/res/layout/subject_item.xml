@@ -31,13 +31,13 @@
                 android:layout_centerVertical="true"
                 android:textSize="@dimen/txt_12"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/delete"
-                android:id="@+id/sub_delete"
-                android:padding="@dimen/view_5"
-                android:layout_alignParentRight="true"/>
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/delete"-->
+<!--                android:id="@+id/sub_delete"-->
+<!--                android:padding="@dimen/view_5"-->
+<!--                android:layout_alignParentRight="true"/>-->
 
         </RelativeLayout>
     </LinearLayout>
