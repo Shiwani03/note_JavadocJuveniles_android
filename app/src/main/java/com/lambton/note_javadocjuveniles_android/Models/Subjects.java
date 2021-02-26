@@ -21,11 +21,11 @@ public class Subjects{
       this.subject_id = subject_id;
    }
 
-   public String getSubject_name() {
-      return subject_name;
-   }
-
-   public void setSubject_name(String subject_name) {
-      this.subject_name = subject_name;
-   }
+//   public String getSubject_name() {
+//      return subject_name;
+//   }
+//
+//   public void setSubject_name(String subject_name) {
+//      this.subject_name = subject_name;
+//   }
 }
