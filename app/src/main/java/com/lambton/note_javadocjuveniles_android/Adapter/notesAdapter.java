@@ -89,29 +89,29 @@ public abstract class notesAdapter extends RecyclerView.Adapter<notesAdapter.Vie
 
     }
 
-//    @Override
-//    public int getItemCount() {
-//        return notes.size();
-//    }
-//
-//    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener {
-//
-//        TextView date,title,description,txtSubjectItem;
-//        ImageView note_img,delete,map;
-//
-//        public Viewholder(@NonNull View itemView) {
-//            super(itemView);
-//            date=(TextView)itemView.findViewById(R.id.date);
-//            title=(TextView)itemView.findViewById(R.id.title);
-//            description=(TextView)itemView.findViewById(R.id.desc);
-//            note_img=(ImageView) itemView.findViewById(R.id.note_image);
-//            map=(ImageView) itemView.findViewById(R.id.map);
-//            delete=(ImageView) itemView.findViewById(R.id.delete);
-//            txtSubjectItem =  (TextView)itemView.findViewById(R.id.txtSubjectItem);
-//            itemView.setOnClickListener(this);
-//
-//
-//        }
+    @Override
+    public int getItemCount() {
+        return notes.size();
+    }
+
+    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        TextView date,title,description,txtSubjectItem;
+        ImageView note_img,delete,map;
+
+        public Viewholder(@NonNull View itemView) {
+            super(itemView);
+            date=(TextView)itemView.findViewById(R.id.date);
+            title=(TextView)itemView.findViewById(R.id.title);
+            description=(TextView)itemView.findViewById(R.id.desc);
+            note_img=(ImageView) itemView.findViewById(R.id.note_image);
+            map=(ImageView) itemView.findViewById(R.id.map);
+            delete=(ImageView) itemView.findViewById(R.id.delete);
+            txtSubjectItem =  (TextView)itemView.findViewById(R.id.txtSubjectItem);
+            itemView.setOnClickListener(this);
+
+
+       }
 //
 //        @Override
 //        public void onClick(View v) {
