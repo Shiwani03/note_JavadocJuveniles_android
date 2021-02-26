@@ -180,7 +180,7 @@ public class NewNoteActivity extends AppCompatActivity {
 
     }
 
-    /*private void getAndSetNotes() {
+    private void getAndSetNotes() {
         List<Notes> notes = notesDatabase.getNoteDao().getAll();
         int index = getIntent().getIntExtra("selectedIndex",-1);
         if (index != -1){
@@ -199,7 +199,7 @@ public class NewNoteActivity extends AppCompatActivity {
 
         }
     }
-    private void startUpdateLocation() {
+    /*private void startUpdateLocation() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
