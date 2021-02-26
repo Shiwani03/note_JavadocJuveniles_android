@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(MainActivity.this).getSubjectDao().getAll()) {
+        madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(MainActivity.this).getSubjectDao().getAll()) {
             @Override
             public void deleteAddress(final int pos) {
 
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(madapter);
     }
 
-    private void filter(String text) {
+    /*private void filter(String text) {
         listNotes =  NotesDatabase.getInstance(MainActivity.this).getNoteDao().getAll();
         List<Notes> temp = new ArrayList();
         for (Notes n :listNotes) {
