@@ -199,7 +199,7 @@ public class NewNoteActivity extends AppCompatActivity {
 
         }
     }
-    /*private void startUpdateLocation() {
+    private void startUpdateLocation() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -291,7 +291,7 @@ public class NewNoteActivity extends AppCompatActivity {
         }
     }
 
-    public void gallery() {
+   /* public void gallery() {
 
         final CharSequence[] items = { "Take Photo", "Choose from Library","Record Audio","Cancel" };
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
