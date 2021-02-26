@@ -73,7 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-  /*  @Override
+    @Override
     public void onMapReady(GoogleMap googleMap) {
         long millisecond = note.getCreated();
         // or you already have long value of date, use this instead of milliseconds variable.
@@ -86,5 +86,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .snippet("Desc: " + note.getDescription()+" Subject: "+sub.getSubject_name() + " Date Created: "+dateString);
         mMap.addMarker(options);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-    }*/
+    }
 }
