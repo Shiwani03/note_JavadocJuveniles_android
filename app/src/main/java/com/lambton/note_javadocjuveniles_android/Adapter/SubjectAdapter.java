@@ -33,7 +33,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
     }
 
-   /* @Override
+    @Override
     public void onBindViewHolder(@NonNull Viewholder holder, final int position) {
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
     }
 
-    @Override
+   /* @Override
     public int getItemCount() {
         return list.size();
     }
