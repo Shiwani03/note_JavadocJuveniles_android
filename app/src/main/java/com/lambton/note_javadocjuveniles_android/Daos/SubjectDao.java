@@ -26,14 +26,14 @@ public interface SubjectDao {
      * Insert the object in database
      * @param note, object to be inserted
      */
-   /* @Insert
+    @Insert
     void insert(Subjects subject);
 
-    /*
-     * update the object in database
+
+   /*  * update the object in database
      * @param note, object to be updated
      */
- /*   @Update
+  @Update
     void update(Subjects repos);
 
     /*
@@ -41,13 +41,13 @@ public interface SubjectDao {
      * @param note, object to be deleted
      */
     @Delete
-   /* void delete(Subjects subject);
+    void delete(Subjects subject);
 
     /*
      * delete list of objects from database
      * @param note, array of objects to be deleted
      */
     @Delete
-   /* void delete(Subjects... subject);      // Note... is varargs, here note is an array
+    void delete(Subjects... subject);      // Note... is varargs, here note is an array
 
 }
