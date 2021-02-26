@@ -112,19 +112,19 @@ public abstract class notesAdapter extends RecyclerView.Adapter<notesAdapter.Vie
 
 
        }
-//
-//        @Override
-//        public void onClick(View v) {
-//
-//            Intent i=new Intent(context, NewNoteActivity.class);
-//            i.putExtra("from","update");
-//            i.putExtra("selectedIndex",getAdapterPosition());
-//            context.startActivity(i);
-//
-//        }
-//    }
-//
-//    public abstract void deleteAddress(int i);
-//
-//
-//}
+
+        @Override
+        public void onClick(View v) {
+
+            Intent i=new Intent(context, NewNoteActivity.class);
+            i.putExtra("from","update");
+            i.putExtra("selectedIndex",getAdapterPosition());
+            context.startActivity(i);
+
+        }
+    }
+
+    public abstract void deleteAddress(int i);
+
+
+}
