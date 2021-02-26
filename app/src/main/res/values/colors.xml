@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">@color/ThemeColor</color>
     <color name="colorAccent">@color/ThemeColor</color>
     <color name="white">#fff</color>
-    <color name="blue">#dcdc</color>
+    <color name="grey">#dcdc</color>
     <color name="ThemeColor">#DD43AE7C</color>
 </resources>
