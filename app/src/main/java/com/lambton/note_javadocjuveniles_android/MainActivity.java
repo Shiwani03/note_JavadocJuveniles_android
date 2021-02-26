@@ -1,9 +1,5 @@
 package com.lambton.note_javadocjuveniles_android;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -18,8 +14,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.javadocjuveniles.Adapter.notesAdapter;
-import com.javadocjuveniles.Models.Notes;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.lambton.note_javadocjuveniles_android.Adapter.notesAdapter;
+import com.lambton.note_javadocjuveniles_android.Models.Notes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         drawer_txt.setVisibility(View.GONE);
         new_note.setVisibility(View.GONE);
         txt_title.setText("Notes");
-        notesDatabase = NotesDatabase.getInstance(MainActivity.this);
-        listNotes =  NotesDatabase.getInstance(MainActivity.this).getNoteDao().getAll();
+        notesDatabase = NotesDatabase.getInstance(com.lambton.note_javadocjuveniles_android.MainActivity.this);
+        listNotes =  NotesDatabase.getInstance(com.lambton.note_javadocjuveniles_android.MainActivity.this).getNoteDao().getAll();
         if(listNotes.size()==0){
             no_note.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.GONE);
@@ -69,9 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        search.addTextChangedListener(new TextWatcher()
-
-        {
+        search.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -88,11 +86,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(MainActivity.this).getSubjectDao().getAll()) {
+        madapter = new notesAdapter(this,listNotes,NotesDatabase.getInstance(com.lambton.note_javadocjuveniles_android.MainActivity.this).getSubjectDao().getAll()) {
             @Override
             public void deleteAddress(final int pos) {
 
-                final AlertDialog.Builder mainDialog = new AlertDialog.Builder(MainActivity.this);
+                final AlertDialog.Builder mainDialog = new AlertDialog.Builder(com.lambton.note_javadocjuveniles_android.MainActivity.this);
                 LayoutInflater inflater = (LayoutInflater)getApplicationContext() .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 View dialogView = inflater.inflate(R.layout.alert_dialog, null);
                 mainDialog.setView(dialogView);
@@ -135,8 +133,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(madapter);
     }
 
-    /*private void filter(String text) {
-        listNotes =  NotesDatabase.getInstance(MainActivity.this).getNoteDao().getAll();
+    private void filter(String text) {
+        listNotes =  NotesDatabase.getInstance(com.lambton.note_javadocjuveniles_android.MainActivity.this).getNoteDao().getAll();
         List<Notes> temp = new ArrayList();
         for (Notes n :listNotes) {
             if(n.getTitle().toLowerCase().contains(text.toLowerCase()) || n.getDescription().toLowerCase().contains(text.toLowerCase())){
@@ -147,4 +145,3 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.getAdapter().notifyDataSetChanged();
     }
 }
-*/

@@ -5,6 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
 import com.lambton.note_javadocjuveniles_android.Models.Subjects;
 import com.lambton.note_javadocjuveniles_android.Models.SubjectsWithNotes;
 
@@ -29,11 +30,11 @@ public interface SubjectDao {
     @Insert
     void insert(Subjects subject);
 
-
-   /*  * update the object in database
+    /*
+     * update the object in database
      * @param note, object to be updated
      */
-  @Update
+    @Update
     void update(Subjects repos);
 
     /*

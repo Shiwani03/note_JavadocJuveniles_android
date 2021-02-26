@@ -13,13 +13,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.javadocjuveniles.MapsActivity;
-import com.javadocjuveniles.Models.Notes;
-import com.javadocjuveniles.Models.Subjects;
-import com.javadocjuveniles.NewNoteActivity;
-import com.javadocjuveniles.R;
-import com.javadocjuveniles.utils.DataConverter;
+import com.lambton.note_javadocjuveniles_android.MapsActivity;
 import com.lambton.note_javadocjuveniles_android.Models.Notes;
+import com.lambton.note_javadocjuveniles_android.Models.Subjects;
+import com.lambton.note_javadocjuveniles_android.NewNoteActivity;
+import com.lambton.note_javadocjuveniles_android.R;
+import com.lambton.note_javadocjuveniles_android.utils.DataConverter;
 
 import java.util.Date;
 import java.util.List;
@@ -112,7 +111,7 @@ public abstract class notesAdapter extends RecyclerView.Adapter<notesAdapter.Vie
             itemView.setOnClickListener(this);
 
 
-       }
+        }
 
         @Override
         public void onClick(View v) {

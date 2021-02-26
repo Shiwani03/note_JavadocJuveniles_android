@@ -10,32 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/view_50"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:background="@android:color/black"
+        android:background="@color/ThemeColor"
         android:id="@+id/createnote"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/footer_image"
-            android:background="@android:color/black"
-            android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_image"
+            android:background="@color/ThemeColor"
+       android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/white"
-            android:drawablePadding="@dimen/view_5"
+        android:textColor="@color/white"
+android:drawablePadding="@dimen/view_5"
             android:drawableLeft="@drawable/ic_history"
-            android:text="New Note"
+        android:text="New Note"
 
-            />
+       />
     </RelativeLayout>
 
-<!--    <include-->
-<!--        android:id="@+id/include"-->
-<!--        layout="@layout/header_item"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"></include>-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
 
     <include
         android:id="@+id/include2"

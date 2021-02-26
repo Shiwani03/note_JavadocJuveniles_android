@@ -27,5 +27,5 @@ public class Subjects{
 
    public void setSubject_name(String subject_name) {
       this.subject_name = subject_name;
-  }
+   }
 }

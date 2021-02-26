@@ -15,8 +15,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.javadocjuveniles.Models.Notes;
-import com.javadocjuveniles.Models.Subjects;
+import com.lambton.note_javadocjuveniles_android.Models.Notes;
+import com.lambton.note_javadocjuveniles_android.Models.Subjects;
 
 import java.util.Date;
 import java.util.List;

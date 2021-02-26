@@ -28,6 +28,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.lambton.note_javadocjuveniles_android.Models.Notes;
 import com.lambton.note_javadocjuveniles_android.Models.Subjects;
+import com.lambton.note_javadocjuveniles_android.utils.DataConverter;
 
 import java.io.IOException;
 import java.util.Date;
@@ -67,7 +68,7 @@ public class NewNoteActivity extends AppCompatActivity {
         description=(EditText) findViewById(R.id.description);
         subject=(Button) findViewById(R.id.select_subject);
         share_pic=(ImageView) findViewById(R.id.share_pic);
-        notesDatabase = NotesDatabase.getInstance(NewNoteActivity.this);
+        notesDatabase = NotesDatabase.getInstance(com.lambton.note_javadocjuveniles_android.NewNoteActivity.this);
 
         save=(RelativeLayout) findViewById(R.id.save);
 
@@ -119,7 +120,7 @@ public class NewNoteActivity extends AppCompatActivity {
         drawer_txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                Intent i=new Intent(getApplicationContext(), com.lambton.note_javadocjuveniles_android.MainActivity.class);
                 startActivity(i);
             }
         });
@@ -191,7 +192,7 @@ public class NewNoteActivity extends AppCompatActivity {
             if(data != null){
                 image = DataConverter.convertByteArray2Bitmap(data);
                 share_pic.setImageBitmap(image);
-
+                share_pic.setVisibility(View.VISIBLE);
             }
             Subjects sub = notesDatabase.getSubjectDao().getSubject(note.getSubject_id_fk()).get(0);
             subject.setText(sub.getSubject_name());
@@ -255,6 +256,7 @@ public class NewNoteActivity extends AppCompatActivity {
         {
             image = (Bitmap) data.getExtras().get("data");
             share_pic.setImageBitmap(image);
+            share_pic.setVisibility(View.VISIBLE);
 
         }
         else if(reqCode == 112 && resultCode == RESULT_OK){
@@ -266,6 +268,7 @@ public class NewNoteActivity extends AppCompatActivity {
             try {
                 image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
                 share_pic.setImageBitmap(image);
+                share_pic.setVisibility(View.VISIBLE);
             } catch (IOException e) {
                 e.printStackTrace();
                 Toast.makeText(getApplicationContext(),e.getLocalizedMessage(),Toast.LENGTH_SHORT).show();
@@ -329,5 +332,5 @@ public class NewNoteActivity extends AppCompatActivity {
         Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
         photoPickerIntent.setType("image/*");
         startActivityForResult(photoPickerIntent, GALLERY_REQUEST);
-    }*/
+    }
 }
