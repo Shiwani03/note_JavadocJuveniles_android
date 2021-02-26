@@ -33,7 +33,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
     }
 
-    @Override
+   /* @Override
     public void onBindViewHolder(@NonNull Viewholder holder, final int position) {
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +75,6 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
     }
     public abstract void deleteAddress(int i);
     public abstract void editSubject(int i);
-    public abstract void selectSubject(int i);
+    public abstract void selectSubject(int i);*/
 
 }
