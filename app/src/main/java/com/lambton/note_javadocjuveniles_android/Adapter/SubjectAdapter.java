@@ -62,7 +62,7 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
 
         }
 
-       /* @Override
+       @Override
         public void onClick(View view) {
             selectSubject(getAdapterPosition());
         }
@@ -75,6 +75,6 @@ public abstract class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter
     }
     public abstract void deleteAddress(int i);
     public abstract void editSubject(int i);
-    public abstract void selectSubject(int i);*/
+    public abstract void selectSubject(int i);
 
 }

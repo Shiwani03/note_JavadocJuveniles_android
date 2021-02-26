@@ -69,8 +69,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        search.addTextChangedListener(new TextWatcher() {
-            @Override
+        search.addTextChangedListener(new TextWatcher()
+
+        {
+          /*  @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
@@ -145,3 +147,4 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.getAdapter().notifyDataSetChanged();
     }
 }
+*/

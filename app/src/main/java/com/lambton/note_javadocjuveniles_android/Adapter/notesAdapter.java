@@ -19,6 +19,7 @@ import com.javadocjuveniles.Models.Subjects;
 import com.javadocjuveniles.NewNoteActivity;
 import com.javadocjuveniles.R;
 import com.javadocjuveniles.utils.DataConverter;
+import com.lambton.note_javadocjuveniles_android.Models.Notes;
 
 import java.util.Date;
 import java.util.List;
