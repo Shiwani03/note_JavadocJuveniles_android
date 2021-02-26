@@ -64,7 +64,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
-                <TextView-->
+                <TextView
                     android:id="@+id/title"-->
                     android:layout_width="wrap_content"-->
                     android:layout_height="wrap_content"-->
@@ -83,7 +83,7 @@
                     android:ellipsize="end"
                     android:maxLines="3"
                     android:paddingLeft="@dimen/view_5"
-                    android:text="Descriptiommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmn"
+                    android:text="Descriptiommmmmmmmmmmmmmmmmmmmmn"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/txt_14" />
 
