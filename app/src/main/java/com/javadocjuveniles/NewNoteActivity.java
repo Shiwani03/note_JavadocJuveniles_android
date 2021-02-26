@@ -240,7 +240,7 @@ public class NewNoteActivity extends AppCompatActivity {
         gallery();
 
     }
-   /* @Override
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 
         if (REQUEST_CODE == requestCode) {
@@ -248,7 +248,7 @@ public class NewNoteActivity extends AppCompatActivity {
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, locationListener);
             }
         }
-    }*/
+    }
     @Override
     protected void onActivityResult(int reqCode, int resultCode, Intent data) {
         super.onActivityResult(reqCode, resultCode, data);
