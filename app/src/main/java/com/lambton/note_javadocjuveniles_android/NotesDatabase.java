@@ -24,11 +24,11 @@ public abstract class NotesDatabase extends RoomDatabase {
         return noteDB;
     }
 
-    /*private static NotesDatabase buildDatabaseInstance(Context context) {
+    private static NotesDatabase buildDatabaseInstance(Context context) {
         return Room.databaseBuilder(context,
                 NotesDatabase.class,
                 "NotesDB")
                 .allowMainThreadQueries().build();
-    }*/
+    }
 
 }
