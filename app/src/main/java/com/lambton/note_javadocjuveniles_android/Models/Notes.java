@@ -72,7 +72,7 @@ public class Notes {
 
 
 
-   /* public String getNote_audio() {
+    public String getNote_audio() {
         return note_audio;
     }
 
